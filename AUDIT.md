@@ -23,3 +23,14 @@ crowded axis ticks on narrow screens; missing note for browsers without JavaScri
 
 Known and accepted: the overlay pictures in the hero show the English UI in both languages; the screenshots of the
 Speech models window show a developer data folder path.
+
+## After deployment (live site)
+
+- https://apkmason.dev/whistle-type-site/ — all files 200, 8/8 images load, both charts render, no requests outside
+  the page's own origin; HTTP → HTTPS and apkmasondev.github.io → apkmason.dev redirect with 301; HSTS header present;
+  no cookies are set.
+- The domain is proxied by **Cloudflare**, which injects a hidden bot-trap link and an inline bot-detection script
+  ("JavaScript Detections") into every page. The page's CSP blocks that script (one console message:
+  "Executing inline script violates … script-src 'self'"), so it never runs and the page stays free of third-party
+  code. To remove the message, turn off JavaScript Detections / Bot Fight Mode for this path in the Cloudflare
+  dashboard of apkmason.dev; allowing the script in the CSP is deliberately not done.
