@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>WhistleType — local push-to-talk dictation for Windows</title>
+<meta name="description" content="Hold a key, speak, release — the text appears wherever your cursor is. Free, open-source dictation for Windows that runs 100% locally: Whistle on the CPU, Whisper on your NVIDIA GPU.">
+<link rel="canonical" href="https://apkmasondev.github.io/whistle-type-site/">
+<link rel="icon" type="image/png" href="assets/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f7f8fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#10141f" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="WhistleType — local push-to-talk dictation for Windows">
+<meta property="og:description" content="Hold a key, speak, release — the text appears where your cursor is. 100% local: Whistle (CPU) + Whisper (NVIDIA GPU).">
+<meta property="og:url" content="https://apkmasondev.github.io/whistle-type-site/">
+<meta property="og:image" content="https://apkmasondev.github.io/whistle-type-site/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="styles.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<header class="top">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="#top" aria-label="WhistleType — home">
+      <img src="assets/icon-256.png" alt="" width="32" height="32">
+      <span>WhistleType</span>
+    </a>
+    <ul class="links">
+      <li><a href="#features" data-i18n="nav_features">Features</a></li>
+      <li><a href="#engines" data-i18n="nav_engines">FAST vs ACCURATE</a></li>
+      <li><a href="#screens" data-i18n="nav_screens">Screenshots</a></li>
+      <li><a href="#privacy" data-i18n="nav_privacy">Privacy</a></li>
+      <li><a href="#download" data-i18n="nav_download">Download</a></li>
+    </ul>
+    <div class="nav-tools">
+      <button class="lang" type="button" id="lang-toggle" aria-label="Zmień język na polski" data-i18n-aria="lang_aria">PL</button>
+      <a class="gh" href="https://github.com/apkmasondev/whistle-type" aria-label="Source code on GitHub" data-i18n-aria="gh_aria">
+        <svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        <span>GitHub</span>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow" data-i18n="eyebrow">Free &amp; open source · Windows 10 / 11</p>
+        <h1 data-i18n="h1">Hold a key. Speak. Release.</h1>
+        <p class="lead" data-i18n="lead">WhistleType types what you say wherever your cursor is — in Claude Code, VS Code, a terminal, a browser or a chat. Speech is recognised <strong>entirely on your PC</strong>: nothing is sent to the cloud.</p>
+        <div class="cta">
+          <a class="btn primary" href="https://github.com/apkmasondev/whistle-type/releases/download/v1.1.0/WhistleType-1.1.0-setup-x64.exe">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v9.59l3.3-3.3a1 1 0 1 1 1.4 1.42l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.42l3.3 3.3V4a1 1 0 0 1 1-1zM5 19a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2H5z"/></svg>
+            <span data-i18n="cta_download">Download for Windows</span>
+          </a>
+          <a class="btn" href="https://github.com/apkmasondev/whistle-type" data-i18n="cta_source">View source</a>
+        </div>
+        <p class="meta" data-i18n="meta">Version 1.1.0 · installer 4.5 MB · MIT licence</p>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="demo-window">
+          <div class="demo-bar"><span></span><span></span><span></span></div>
+          <p class="demo-text"><span class="demo-typed" data-i18n="demo_text">Check the useEffect in this React component and run the tests.</span><span class="caret"></span></p>
+        </div>
+        <img class="pill pill-1" src="assets/overlay-listening.png" alt="" width="295" height="57">
+        <img class="pill pill-2" src="assets/overlay-transcribing.png" alt="" width="245" height="57">
+      </div>
+    </div>
+  </section>
+
+  <section class="steps wrap" aria-labelledby="how-title">
+    <h2 id="how-title" class="sr-only" data-i18n="how_title">How it works</h2>
+    <ol class="step-list">
+      <li><span class="num">1</span><div><h3 data-i18n="s1_t">Hold F8</h3><p data-i18n="s1_d">A small overlay shows <em>Listening…</em> with a live level meter. The key never reaches the app you are in.</p></div></li>
+      <li><span class="num">2</span><div><h3 data-i18n="s2_t">Speak</h3><p data-i18n="s2_d">Polish, English, or Polish sentences full of English tech terms — the main use case.</p></div></li>
+      <li><span class="num">3</span><div><h3 data-i18n="s3_t">Release</h3><p data-i18n="s3_d">The text is pasted at the cursor and your clipboard is put back exactly as it was.</p></div></li>
+    </ol>
+  </section>
+
+  <section id="features" class="section">
+    <div class="wrap">
+      <h2 data-i18n="f_title">Everything a dictation tool should do — and nothing it shouldn't</h2>
+      <div class="cards">
+        <article class="card"><h3 data-i18n="f1_t">Global push-to-talk</h3><p data-i18n="f1_d">Hold to talk or press-to-toggle, any shortcut you like, Esc cancels. Works in administrator windows too (the text waits on the clipboard).</p></article>
+        <article class="card"><h3 data-i18n="f2_t">100% local</h3><p data-i18n="f2_d">No speech API, no account, no telemetry. After the model download it works offline — verified by tests that watch the app's network sockets.</p></article>
+        <article class="card"><h3 data-i18n="f3_t">Two engines</h3><p data-i18n="f3_d"><strong>FAST</strong>: Cactus Compute Whistle on the CPU, ~0.1 s per phrase. <strong>ACCURATE</strong>: OpenAI Whisper via whisper.cpp. <strong>AUTO</strong> picks for you.</p></article>
+        <article class="card"><h3 data-i18n="f4_t">NVIDIA GPU acceleration</h3><p data-i18n="f4_d">An optional GPU pack (official whisper.cpp CUDA build) runs Whisper large-v3-turbo in ~0.5 s per sentence, with automatic CPU fallback.</p></article>
+        <article class="card"><h3 data-i18n="f5_t">Clipboard-safe</h3><p data-i18n="f5_d">Every clipboard format is backed up and restored; the dictation is kept out of clipboard history. Or type characters without touching the clipboard.</p></article>
+        <article class="card"><h3 data-i18n="f6_t">Your vocabulary</h3><p data-i18n="f6_d">Add names, products and jargon (Kubernetes, useEffect, Gradle…). Whistle uses keyword biasing; Whisper gets them as a prompt.</p></article>
+        <article class="card"><h3 data-i18n="f7_t">Ignores noise</h3><p data-i18n="f7_d">A speech gate rejects silence, typing, breathing and clicks before recognition — so nothing like “Thank you.” appears out of nowhere.</p></article>
+        <article class="card"><h3 data-i18n="f8_t">Light and quiet</h3><p data-i18n="f8_d">One small native app (Rust + Win32): 0% CPU when idle, ~40 MB RAM in FAST mode. Polish and English interface.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="engines" class="section alt">
+    <div class="wrap">
+      <h2 data-i18n="e_title">FAST or ACCURATE?</h2>
+      <p class="section-lead" data-i18n="e_lead">Switch in Settings or from the tray menu. AUTO (the default) uses Whisper when it is ready on your GPU and Whistle otherwise.</p>
+      <div class="table-scroll">
+        <table class="compare">
+          <thead>
+            <tr><th scope="col"></th><th scope="col">FAST</th><th scope="col">ACCURATE</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row" data-i18n="c_engine">Engine</th><td>Cactus Compute Whistle 2.0.0</td><td data-i18n="c_engine_acc">OpenAI Whisper (base → large-v3-turbo) via whisper.cpp</td></tr>
+            <tr><th scope="row" data-i18n="c_runs">Runs on</th><td>CPU</td><td data-i18n="c_runs_acc">NVIDIA GPU (CUDA), CPU fallback</td></tr>
+            <tr><th scope="row" data-i18n="c_download">Download</th><td data-i18n="c_download_fast">16.9 MB</td><td data-i18n="c_download_acc">60–574 MB model + 675 MB GPU pack</td></tr>
+            <tr><th scope="row" data-i18n="c_short">Short phrase</th><td data-i18n="c_short_fast">~0.1 s</td><td data-i18n="c_short_acc">~0.4 s (GPU)</td></tr>
+            <tr><th scope="row" data-i18n="c_memory">Memory while ready</th><td>~40 MB RAM</td><td data-i18n="c_memory_acc">~0.5 GB RAM + ~1 GB VRAM</td></tr>
+            <tr><th scope="row" data-i18n="c_best">Best for</th><td data-i18n="c_best_fast">any PC, instant short commands</td><td data-i18n="c_best_acc">best Polish quality, long dictation, technical terms</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="charts">
+        <figure class="chart-card">
+          <figcaption>
+            <span class="chart-title" data-i18n="ch1_t">Word error rate on real Polish speech</span>
+            <span class="chart-sub" data-i18n="ch1_s">FLEURS pl, 60 utterances · Whisper on the GPU · lower is better</span>
+          </figcaption>
+          <div class="chart" id="chart-wer" role="img" aria-label="Word error rate: Whistle 35.5%, Whisper base 33.4%, small 15.5%, medium 8.4%, large-v3-turbo 5.7%" data-i18n-aria="ch1_aria"></div>
+        </figure>
+        <figure class="chart-card">
+          <figcaption>
+            <span class="chart-title" data-i18n="ch2_t">Time per sentence</span>
+            <span class="chart-sub" data-i18n="ch2_s">same 60 utterances (4–16 s) · Whisper on the GPU · lower is better</span>
+          </figcaption>
+          <div class="chart" id="chart-ms" role="img" aria-label="Average recognition time: Whistle 0.73 s, Whisper base 0.36 s, small 0.49 s, medium 0.88 s, large-v3-turbo 0.52 s" data-i18n-aria="ch2_aria"></div>
+        </figure>
+      </div>
+      <noscript><p class="fine">The charts need JavaScript — all numbers are in the table below.</p></noscript>
+      <details class="data-table">
+        <summary data-i18n="tbl_summary">Show the measurements as a table</summary>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th scope="col" data-i18n="t_config">Configuration</th><th scope="col">WER</th><th scope="col">CER</th><th scope="col" data-i18n="t_time">Time / sentence</th><th scope="col">VRAM</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Whistle 2.0.0 · CPU</th><td>35.5 %</td><td>11.0 %</td><td>0.73 s</td><td>—</td></tr>
+              <tr><th scope="row">Whisper base · GPU</th><td>33.4 %</td><td>9.3 %</td><td>0.36 s</td><td>0.39 GB</td></tr>
+              <tr><th scope="row">Whisper small · GPU</th><td>15.5 %</td><td>4.7 %</td><td>0.49 s</td><td>0.65 GB</td></tr>
+              <tr><th scope="row">Whisper medium · GPU</th><td>8.4 %</td><td>2.9 %</td><td>0.88 s</td><td>1.30 GB</td></tr>
+              <tr><th scope="row">Whisper large-v3-turbo · GPU</th><td>5.7 %</td><td>2.1 %</td><td>0.52 s</td><td>0.98 GB</td></tr>
+              <tr><th scope="row" data-i18n="t_small_cpu">Whisper small · CPU only</th><td>17.6 %</td><td>4.8 %</td><td>6.9 s</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+      <p class="fine" data-i18n="bench_note">Measured on a laptop with a Ryzen 7 5800H and an RTX 3060 Laptop GPU (6 GB), Whisper models quantised to q5. Without an NVIDIA GPU, Whisper models that beat Whistle need several seconds per sentence — that is why AUTO only switches to Whisper on the GPU. Full method and raw numbers in <a href="https://github.com/apkmasondev/whistle-type/blob/main/PERFORMANCE.md">PERFORMANCE.md</a>.</p>
+    </div>
+  </section>
+
+  <section id="screens" class="section">
+    <div class="wrap">
+      <h2 data-i18n="sc_title">Screenshots</h2>
+      <div class="shots">
+        <figure class="shot shot-tall">
+          <img src="assets/settings-en.png" data-src-pl="assets/settings-pl.png" data-src-en="assets/settings-en.png" width="723" height="1238" loading="lazy" alt="Settings window: microphone, shortcut, recognition engine, output and status" data-i18n-alt="alt_settings">
+          <figcaption data-i18n="cap_settings">Settings — one native window, every change saved immediately.</figcaption>
+        </figure>
+        <div class="shot-col">
+          <figure class="shot">
+            <img src="assets/models-en.png" data-src-pl="assets/models-pl.png" data-src-en="assets/models-en.png" width="950" height="626" loading="lazy" alt="Speech models window listing Whistle, four Whisper models and the GPU pack with size, Polish quality and status" data-i18n-alt="alt_models">
+            <figcaption data-i18n="cap_models">Speech models — download or delete models and the GPU pack. Nothing is downloaded until you click.</figcaption>
+          </figure>
+          <figure class="shot overlays">
+            <div class="pills">
+              <img src="assets/overlay-listening.png" width="295" height="57" loading="lazy" alt="Overlay: Listening… with timer and level meter" data-i18n-alt="alt_listening">
+              <img src="assets/overlay-transcribing.png" width="245" height="57" loading="lazy" alt="Overlay: Transcribing…" data-i18n-alt="alt_transcribing">
+              <img src="assets/overlay-nospeech.png" width="254" height="57" loading="lazy" alt="Overlay: No speech detected" data-i18n-alt="alt_nospeech">
+            </div>
+            <figcaption data-i18n="cap_overlay">The overlay never takes the focus, follows the active monitor and shows state with an icon and text, not colour alone.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacy" class="section alt">
+    <div class="wrap privacy">
+      <div>
+        <h2 data-i18n="p_title">Private by design</h2>
+        <p class="section-lead" data-i18n="p_lead">Your voice is processed on your computer and nowhere else.</p>
+      </div>
+      <ul class="checks">
+        <li data-i18n="p1">No cloud speech API, no account, no telemetry, no ads.</li>
+        <li data-i18n="p2">Recordings are never written to disk; transcripts are not logged.</li>
+        <li data-i18n="p3">The microphone is open only while you hold the key.</li>
+        <li data-i18n="p4">Network is used only to download a model when you click <em>Download</em> — from a pinned source, verified with SHA-256.</li>
+        <li data-i18n="p5">The dictated text is excluded from clipboard history and cloud clipboard.</li>
+        <li data-i18n="p6">Open source: read every line on GitHub.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="download" class="section">
+    <div class="wrap">
+      <h2 data-i18n="d_title">Download &amp; install</h2>
+      <div class="dl-grid">
+        <article class="dl-card">
+          <h3 data-i18n="d1_t">Installer</h3>
+          <p data-i18n="d1_d">Per-user install, no administrator rights. Optional start with Windows; clean uninstall from Settings → Apps.</p>
+          <a class="btn primary" href="https://github.com/apkmasondev/whistle-type/releases/download/v1.1.0/WhistleType-1.1.0-setup-x64.exe" data-i18n="d1_btn">WhistleType-1.1.0-setup-x64.exe · 4.5 MB</a>
+        </article>
+        <article class="dl-card">
+          <h3 data-i18n="d2_t">Portable</h3>
+          <p data-i18n="d2_d">Unzip anywhere. Create an empty file <code>WhistleType.portable</code> next to the exe to keep settings and models in <code>.\data</code>.</p>
+          <a class="btn" href="https://github.com/apkmasondev/whistle-type/releases/download/v1.1.0/WhistleType-1.1.0-portable-x64.zip" data-i18n="d2_btn">WhistleType-1.1.0-portable-x64.zip · 5.2 MB</a>
+        </article>
+      </div>
+      <div class="req">
+        <div>
+          <h3 data-i18n="r_title">Requirements</h3>
+          <ul>
+            <li data-i18n="r1">Windows 10 (1809+) or Windows 11, 64-bit.</li>
+            <li data-i18n="r2">A microphone (<em>Settings → Privacy &amp; security → Microphone → Let desktop apps access your microphone</em>).</li>
+            <li data-i18n="r3">FAST: any x64 CPU. ACCURATE on the GPU: an NVIDIA card with ≥ 2 GB VRAM and a recent driver — no CUDA toolkit needed.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="g_title">First start</h3>
+          <ol>
+            <li data-i18n="g1">WhistleType offers the one-time download of the Whistle model (16.9 MB).</li>
+            <li data-i18n="g2">For ACCURATE: Settings → Recognition → <em>Models…</em> → download the GPU pack and Whisper large-v3-turbo, then restart the app.</li>
+            <li data-i18n="g3">Hold F8 and speak.</li>
+          </ol>
+        </div>
+      </div>
+      <p class="note" data-i18n="smartscreen">The builds are not code-signed yet, so Windows SmartScreen may warn on first launch (<em>More info → Run anyway</em>). Checksums: <a href="https://github.com/apkmasondev/whistle-type/releases/download/v1.1.0/SHA256SUMS.txt">SHA256SUMS.txt</a> · <a href="https://github.com/apkmasondev/whistle-type/releases">all releases</a>.</p>
+    </div>
+  </section>
+
+  <section id="licences" class="section alt">
+    <div class="wrap">
+      <h2 data-i18n="l_title">Licences &amp; credits</h2>
+      <p class="section-lead" data-i18n="l_lead">WhistleType is released under the <a href="https://github.com/apkmasondev/whistle-type/blob/main/LICENSE">MIT licence</a>. It builds on these projects, each under its own licence:</p>
+      <div class="table-scroll">
+        <table class="credits">
+          <thead><tr><th scope="col" data-i18n="l_component">Component</th><th scope="col" data-i18n="l_author">Author</th><th scope="col" data-i18n="l_licence">Licence</th><th scope="col" data-i18n="l_how">How it is used</th></tr></thead>
+          <tbody>
+            <tr><th scope="row"><a href="https://huggingface.co/Cactus-Compute/whistle">Whistle 2.0.0</a> &amp; <a href="https://github.com/cactus-compute/needle">Needle 3</a></th><td>Cactus Compute</td><td>Apache-2.0</td><td data-i18n="l_whistle">FAST engine; engine DLL bundled, model downloaded on first run</td></tr>
+            <tr><th scope="row"><a href="https://github.com/ggml-org/whisper.cpp">whisper.cpp / ggml</a></th><td data-i18n="l_ggml_author">the ggml authors</td><td>MIT</td><td data-i18n="l_wcpp">ACCURATE engine; CPU DLLs bundled, CUDA build optional download</td></tr>
+            <tr><th scope="row"><a href="https://github.com/openai/whisper">Whisper</a></th><td>OpenAI</td><td>MIT</td><td data-i18n="l_whisper">model weights, downloaded on request</td></tr>
+            <tr><th scope="row">CUDA runtime, cuBLAS</th><td>NVIDIA</td><td data-i18n="l_cuda_lic">CUDA EULA (redistributable)</td><td data-i18n="l_cuda">inside the optional GPU pack</td></tr>
+            <tr><th scope="row">Visual C++ runtime</th><td>Microsoft</td><td data-i18n="l_vc_lic">redistributable</td><td data-i18n="l_vc">needed by whisper.cpp, bundled</td></tr>
+            <tr><th scope="row" data-i18n="l_crates">Rust crates</th><td data-i18n="l_crates_author">various</td><td>MIT / Apache-2.0 / Zlib</td><td data-i18n="l_crates_how">compiled into the app</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="fine" data-i18n="l_full">Full list with versions and licence texts: <a href="https://github.com/apkmasondev/whistle-type/blob/main/THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a>. WhistleType is an independent project and is not affiliated with or endorsed by Cactus Compute, OpenAI, NVIDIA or Microsoft. Benchmark audio: Google FLEURS (CC-BY-4.0).</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <p>© 2026 apkmasondev · <a href="https://github.com/apkmasondev/whistle-type/blob/main/LICENSE" data-i18n="foot_mit">MIT licence</a></p>
+    <p><a href="https://github.com/apkmasondev/whistle-type" data-i18n="foot_source">Source code</a> · <a href="https://github.com/apkmasondev/whistle-type/issues" data-i18n="foot_issues">Report an issue</a> · <a href="https://github.com/apkmasondev/whistle-type/blob/main/RESEARCH.md" data-i18n="foot_research">Research notes</a></p>
+    <p class="fine" data-i18n="foot_privacy">This page uses no cookies, no analytics and no external resources.</p>
+  </div>
+</footer>
+<div class="tooltip" id="tooltip" aria-hidden="true" hidden></div>
+</body>
+</html>
