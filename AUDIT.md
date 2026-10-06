@@ -5,7 +5,7 @@
 | Privacy | Requests while loading and using the page (browser network log) | Only the page's own files. No fonts, CDNs, analytics, cookies or embeds. `localStorage` holds only the chosen language |
 | Security | Content-Security-Policy (`default-src 'none'`, scripts/styles/images from `'self'` only, no inline script, `base-uri`/`form-action` none) | No CSP violations in the console. GitHub Pages cannot send headers, so `frame-ancestors` is not available (static page, no forms: low risk) |
 | Security | Dynamic HTML | `innerHTML` only with the page's own static translation strings; chart tooltip text is set with `textContent` |
-| Links | All 16 external URLs (repo, releases, direct downloads, licences, upstream projects) | All reachable (HTTP 200/206); installer, ZIP and SHA256SUMS download from Release v1.1.0. The page's own URL is checked again after deployment |
+| Links | All 16 external URLs (repo, releases, direct downloads, licences, upstream projects) | All reachable (HTTP 200/206); installer, ZIP and SHA256SUMS download from Release v1.1.0. The deployed page (https://apkmason.dev/whistle-type-site/, custom domain of the account; HTTP and github.io redirect to it with 301) was checked after deployment |
 | Content | Facts match the app and PERFORMANCE.md (versions, sizes, WER/latency numbers, requirements) | Checked against the repository |
 | Licences | MIT for WhistleType; Whistle/Needle (Apache-2.0), whisper.cpp (MIT), Whisper (MIT), CUDA (NVIDIA EULA), VC++ runtime, Rust crates; non-affiliation statement | Present, with links to THIRD_PARTY_NOTICES.md |
 | Accessibility | One `h1`, ordered headings, landmarks, skip link, `lang` updated on switch, every image has `alt` (translated), all links/buttons named | Pass (automated DOM checks) |
