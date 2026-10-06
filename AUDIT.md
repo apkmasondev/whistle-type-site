@@ -21,6 +21,8 @@ Fixed during the audit: decimal points in the Polish comparison table; inconsist
 shrinking to ~8 px on phones; keyboard focus on a chart bar hiding its own tooltip (scroll handler);
 crowded axis ticks on narrow screens; missing note for browsers without JavaScript.
 
+Added later: a visible "hobby project, unsigned builds" notice above the downloads (EN/PL, checked on phone and desktop, both themes).
+
 Known and accepted: the overlay pictures in the hero show the English UI in both languages; the screenshots of the
 Speech models window show a developer data folder path.
 

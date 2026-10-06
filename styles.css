@@ -226,6 +226,17 @@ tbody th { font-weight: 600; }
 .req ul, .req ol { margin: 0; padding-left: 1.2em; color: var(--text-2); }
 .req li { margin-bottom: .45em; }
 
+.callout {
+  display: flex; gap: 14px; margin: 20px 0 8px; padding: 18px 20px;
+  background: var(--accent-soft); border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: var(--radius);
+}
+.callout-icon { flex: none; color: var(--accent); margin-top: 2px; }
+.callout h3 { margin-bottom: .4em; }
+.callout p { color: var(--text); margin: 0 0 .6em; font-size: .96rem; }
+.callout p:last-child { margin-bottom: 0; }
+.callout code { background: var(--surface); }
+.meta a { color: inherit; }
+
 /* ---- footer ---- */
 .foot { padding: 32px 0 40px; border-top: 1px solid var(--border); color: var(--text-2); font-size: .93rem; }
 .foot-grid { display: grid; gap: 4px; }
