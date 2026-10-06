@@ -153,6 +153,7 @@
     d.querySelectorAll("[data-i18n]").forEach(function (el) {
       var k = el.getAttribute("data-i18n");
       if (!(k in EN)) EN[k] = el.innerHTML;
+      if (next === "pl" && !PL[k] && window.console) console.warn("missing Polish text: " + k);
       el.innerHTML = next === "pl" && PL[k] ? PL[k] : EN[k];
     });
     d.querySelectorAll("[data-i18n-aria]").forEach(function (el) {
